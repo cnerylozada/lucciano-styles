@@ -1,10 +1,18 @@
-import { keyframes } from 'styled-components'
-
-export const animationOpacity = keyframes`
-  0% {
-    opacity: 0;
+export const inverseRotate = `
+  from {
+    transform: rotate(180deg);
   }
-  100% {
-    opacity: 1;
+
+  to {
+    transform: rotate(0deg);
+  }
+`
+export const rotate = `
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
   }
 `
